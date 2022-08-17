@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+ .banner{
+  background-color: #F8F9FA;
+  height: 60px;
+ }
+ .map{
+  height: 400px;
+  width: 100%;
+  background-image: url('https://tm.ibxk.com.br/2021/12/20/20095730932072.jpg?ims=1200x675');
+  background-size: cover;
+  background-position: 0%;
+  position: relative;
+}
+ .banner a{
+  text-decoration: none;
+ }
+ .back-color{
+   background-color: #F8F9FA;
+ }
+
+ .card-body a{
+  text-decoration: none;
+ }
+ .grey{
+  margin: 20px;
+  background-color: #F8F9FA;
+ }
+ .container{
+  position: absolute;
+  top: 400px;
+ }
+ .container-flat{
+ }

@@ -1,0 +1,31 @@
+<div class="d-flex justify-content-between align-items-center mb-4 banner">
+  <%= link_to "Simple Airbnb", flats_path%>
+  <%= link_to "Add Flat", new_flat_path%>
+</div>
+<div class="container">
+<h1>All our Flats (<%= @flats.count %>)</h1>
+  <div class="row mt-3">
+  <%@flats.each do |flat|%>
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <div class="back-color card-body">
+          <img src="" alt="A flat">
+          <h2><%= flat.name%></h2>
+          <%= flat.address%>
+          <div class="d-flex align-items-center">
+            <%= flat.price_per_night %>
+            <i class="fa-solid fa-euro-sign me-3"></i>
+
+            <%= flat.number_of_guests%>
+            <i class="fa-solid fa-users"></i>
+          </div>
+        </div>
+        <div class="card-body">
+          <%= link_to "More Info", flat_path(flat.id) %>
+        </div>
+      </div>
+    </div>
+    <% end %>
+
+  </div>
+</div>
